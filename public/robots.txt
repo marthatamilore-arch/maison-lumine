@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://marthatamilore-arch.github.io/maison-lumine/sitemap.xml
