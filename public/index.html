@@ -84,6 +84,98 @@ Error generating stack: `+l.message+`
       defer
       src="https://manus-analytics.com/umami"
       data-website-id="d40c19df-cdfb-407d-9e28-1d16e98500b2"></script>
+    <style>
+      .ml-film-section {
+        background: #171613;
+        color: #f1ecdf;
+        padding: clamp(4rem, 9vw, 8rem) 6vw;
+        border-top: 1px solid rgba(212, 186, 125, .22);
+      }
+      .ml-film-inner {
+        width: min(1120px, 100%);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(240px, 370px);
+        gap: clamp(2.5rem, 8vw, 7rem);
+        align-items: center;
+      }
+      .ml-film-kicker {
+        color: #c5aa70;
+        font: 600 .68rem/1.5 Manrope, sans-serif;
+        letter-spacing: .24em;
+        text-transform: uppercase;
+        margin: 0 0 1.2rem;
+      }
+      .ml-film-title {
+        color: #f1ecdf;
+        font: 400 clamp(2.7rem, 6vw, 5rem)/.98 'Cormorant Garamond', Georgia, serif;
+        letter-spacing: -.025em;
+        margin: 0;
+      }
+      .ml-film-copy {
+        max-width: 30rem;
+        color: rgba(241, 236, 223, .72);
+        font: 400 .95rem/1.8 Manrope, sans-serif;
+        margin: 1.5rem 0 2rem;
+      }
+      .ml-film-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 0 1.4rem;
+        border: 1px solid rgba(197, 170, 112, .78);
+        color: #f1ecdf;
+        text-decoration: none;
+        font: 600 .68rem/1 Manrope, sans-serif;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        transition: background .2s ease, color .2s ease;
+      }
+      .ml-film-link:hover, .ml-film-link:focus-visible {
+        background: #c5aa70;
+        color: #171613;
+      }
+      .ml-film-video {
+        display: block;
+        width: min(100%, 370px);
+        aspect-ratio: 9 / 16;
+        margin: 0 auto;
+        object-fit: cover;
+        background: #0d0d0c;
+        box-shadow: 0 24px 70px rgba(0,0,0,.4);
+      }
+      .ml-film-caption {
+        color: rgba(241, 236, 223, .5);
+        font: 500 .62rem/1.5 Manrope, sans-serif;
+        letter-spacing: .15em;
+        text-align: center;
+        text-transform: uppercase;
+        margin: .9rem 0 0;
+      }
+      @media (max-width: 700px) {
+        .ml-film-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+        .ml-film-copy { margin: 1rem 0 1.5rem; }
+        .ml-film-video { width: min(78vw, 330px); }
+      }
+    </style>
+    <section class="ml-film-section" aria-labelledby="ml-film-title">
+      <div class="ml-film-inner">
+        <div>
+          <p class="ml-film-kicker">The Luminé Film · Signature Headwear</p>
+          <h2 class="ml-film-title" id="ml-film-title">Quiet in expression.<br><em>Unmistakable in presence.</em></h2>
+          <p class="ml-film-copy">Three cap expressions. One point of view. Discover the Maison Luminé headwear edit, born in Lagos and made for those becoming.</p>
+          <a class="ml-film-link" href="https://wa.me/2347049333131?text=Hi%20Maison%20Lumin%C3%A9%2C%20I%20saw%20the%20cap%20film%20and%27d%20love%20to%20see%20the%20collection." target="_blank" rel="noopener noreferrer">Enquire about the collection</a>
+        </div>
+        <div>
+          <video class="ml-film-video" controls playsinline preload="metadata" poster="/maison-lumine/site-assets/maison-lumine-cap-film-poster.jpg" aria-label="Maison Luminé signature headwear film">
+            <source src="/maison-lumine/site-assets/maison-lumine-cap-film.mp4" type="video/mp4">
+            Your browser does not support embedded video. Please contact Maison Luminé on WhatsApp to view the collection.
+          </video>
+          <p class="ml-film-caption">Maison Luminé · Born in Lagos</p>
+        </div>
+      </div>
+    </section>
   </body>
 
 </html>
