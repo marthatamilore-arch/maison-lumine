@@ -138,7 +138,7 @@ Error generating stack: `+l.message+`
         width: min(1120px, 100%);
         margin: 0 auto;
         display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(240px, 370px);
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 560px);
         gap: clamp(2.5rem, 8vw, 7rem);
         align-items: center;
       }
@@ -181,8 +181,8 @@ Error generating stack: `+l.message+`
       }
       .ml-film-video {
         display: block;
-        width: min(100%, 370px);
-        aspect-ratio: 9 / 16;
+        width: min(100%, 560px);
+        aspect-ratio: 16 / 9;
         margin: 0 auto;
         object-fit: cover;
         background: #0d0d0c;
@@ -199,23 +199,23 @@ Error generating stack: `+l.message+`
       @media (max-width: 700px) {
         .ml-film-inner { grid-template-columns: 1fr; gap: 2.5rem; }
         .ml-film-copy { margin: 1rem 0 1.5rem; }
-        .ml-film-video { width: min(78vw, 330px); }
+        .ml-film-video { width: min(92vw, 560px); }
       }
     </style>
     <section class="ml-film-section" aria-labelledby="ml-film-title">
       <div class="ml-film-inner">
         <div>
-          <p class="ml-film-kicker">The Luminé Film · Signature Headwear</p>
+          <p class="ml-film-kicker">The Luminé Film · Welcome to the House</p>
           <h2 class="ml-film-title" id="ml-film-title">Quiet in expression.<br><em>Unmistakable in presence.</em></h2>
-          <p class="ml-film-copy">Three cap expressions. One point of view. Discover the Maison Luminé headwear edit, born in Lagos and made for those becoming.</p>
+          <p class="ml-film-copy">A quiet introduction to Maison Luminé — born in Lagos, shaped by intention, and made for those becoming.</p>
           <a class="ml-film-link" href="https://wa.me/2347049333131?text=Hi%20Maison%20Lumin%C3%A9%2C%20I%20saw%20the%20cap%20film%20and%27d%20love%20to%20see%20the%20collection." target="_blank" rel="noopener noreferrer">Enquire about the collection</a>
         </div>
         <div>
-          <video class="ml-film-video" controls playsinline preload="metadata" poster="/maison-lumine/site-assets/maison-lumine-cap-film-poster.jpg" aria-label="Maison Luminé signature headwear film">
-            <source src="/maison-lumine/site-assets/maison-lumine-cap-film.mp4" type="video/mp4">
+            <video class="ml-film-video" controls playsinline preload="metadata" poster="/maison-lumine/site-assets/maison-lumine-welcome-film-poster.jpg" aria-label="Maison Luminé welcome film">
+            <source src="/maison-lumine/site-assets/maison-lumine-welcome-film.mp4" type="video/mp4">
             Your browser does not support embedded video. Please contact Maison Luminé on WhatsApp to view the collection.
           </video>
-          <p class="ml-film-caption">Maison Luminé · Born in Lagos</p>
+          <p class="ml-film-caption">Maison Luminé · Welcome film · Born in Lagos</p>
         </div>
       </div>
     </section>
