@@ -219,6 +219,28 @@ Error generating stack: `+l.message+`
         </div>
       </div>
     </section>
+    <style id="ios-touch-polish">
+      /* iOS touch polish: keep controls comfortably tappable and clear of the home indicator. */
+      @media (max-width: 680px) {
+        .menu-toggle {
+          width: 44px;
+          height: 44px;
+          touch-action: manipulation;
+          -webkit-tap-highlight-color: transparent;
+        }
+        .main-nav a,
+        .floating-whatsapp {
+          touch-action: manipulation;
+          -webkit-tap-highlight-color: transparent;
+        }
+        .floating-whatsapp {
+          min-height: 44px;
+          bottom: calc(13px + env(safe-area-inset-bottom));
+          right: calc(14px + env(safe-area-inset-right));
+        }
+      }
+    </style>
+
   </body>
 
 </html>
